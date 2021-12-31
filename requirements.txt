@@ -1,0 +1,6 @@
+Django
+dj-rest-auth
+django-debug-toolbar
+django-extensions
+django-filter
+djangorestframework
