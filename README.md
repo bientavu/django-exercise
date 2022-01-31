@@ -33,6 +33,7 @@ Le dépôt contient un projet Django prêt à être utilisé pour réaliser l'ex
 * Créer un environnement virtuel Python 3.
 * Installer les dépendances avec `pip install -r requirements.txt`.
 * Effectuer les migrations initiales (`./manage.py makemigrations && ./manage.py migrate`).
+* Remplir la base avec des données de test via la commande `./manage.py populate_db`.
 
 À noter :
 * Écrivez le code de l'exercice comme vous écririez du code de production.
