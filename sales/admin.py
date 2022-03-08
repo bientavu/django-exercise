@@ -1,3 +1,7 @@
 from django.contrib import admin
+from sales.models import Article, Sale, ArticleCategory
 
-# Register your models here.
+
+admin.site.register(Article)
+admin.site.register(Sale)
+admin.site.register(ArticleCategory)
