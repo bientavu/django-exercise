@@ -29,7 +29,7 @@ class Article(models.Model):
 
     objects = models.Manager()
 
-    code = models.CharField("Code", max_length=6, unique=True)
+    code = models.CharField("Code", max_length=6)
     category = models.ForeignKey(
         ArticleCategory,
         verbose_name="Category",
