@@ -4,18 +4,28 @@ from sales.models import Sale, Article
 
 
 class ArticleSerializer(serializers.ModelSerializer):
+    """
+    Call the the Article models object
+    """
     class Meta:
         model = Article
         fields = '__all__'
 
 
 class SaleSerializer(serializers.ModelSerializer):
+    """
+    Call the the Sale models object
+    """
     class Meta:
         model = Sale
         fields = '__all__'
 
 
 class SalesListBy25Serializer(serializers.ModelSerializer):
+    """
+    Call the the Sale models object, pagination by 25
+    with custom fields from the Article models
+    """
     category_article = serializers.SerializerMethodField('get_category_article')
     article_code = serializers.SerializerMethodField('get_article_code')
     article_name = serializers.SerializerMethodField('get_article_name')
