@@ -24,15 +24,3 @@ class SalesListBy25ViewSet(viewsets.ModelViewSet):
     serializer_class = SalesListBy25Serializer
     permission_classes = [IsAuthenticated, IsOwnerOrReadOnly]
     pagination_class = CustomPagination
-
-
-
-#     def create_article(self, serializer):
-#         serializer.save(owner=self.request.user)
-#
-#
-# @api_view(['GET'])
-# def sales_list(request):
-#     sales = Sale.objects.all()
-#     serializer_class = SaleSerializer(sales, many=True)
-#     return Response(serializer_class)
